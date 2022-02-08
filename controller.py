@@ -4,7 +4,7 @@ from main import app
 def index():
     return "Hooray"
 @app.route("/fish/<id>")
-def get_fish():
+def get_fish(id):
     print(id)
     return "My fish is gourgeus"
 @app.route("/fish")
